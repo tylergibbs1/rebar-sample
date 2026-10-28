@@ -13,3 +13,13 @@ import { cartTotal } from "./src/cart"
 
 cartTotal([2.5, 4, 1.25]) // 7.75
 ```
+
+## Run the check locally
+
+```bash
+npm install
+npm run typecheck   # tsc --noEmit
+```
+
+`src/cart.ts` exports `cartTotal`, `lineItemsTotal`, and `applyDiscount`; `src/index.ts`
+re-exports them.
